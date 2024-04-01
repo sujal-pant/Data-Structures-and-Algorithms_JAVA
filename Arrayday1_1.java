@@ -16,6 +16,7 @@ public class Arrayday1_1 {
         for(int age :arr){
             System.out.println(age);
         }
+        
         int i=0;
         while (i<3) {
             System.out.println(arr[i]);
@@ -39,10 +40,10 @@ public class Arrayday1_1 {
 
     }
     public static void main(String[] args) {
-        //Arrayday1_1 obj = new Arrayday1_1();
+        Arrayday1_1 obj = new Arrayday1_1();
         //obj.demoarr();
-        Arrayday1_1 help = new Arrayday1_1();
-        help.multiarr();
+       // Arrayday1_1 help = new Arrayday1_1();
+        obj.multiarr();
 
     }
     
