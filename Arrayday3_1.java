@@ -147,7 +147,7 @@ public class Arrayday3_1 {
      static int[] makefreqarr(int arr[] ){
         int[] freq = new int [100005];
         for(int i=0;i<arr.length;i++){
-            freq[arr[i++]];
+            freq[arr[i]]++;
         }
         return freq;
      }
@@ -161,11 +161,11 @@ public class Arrayday3_1 {
         }
         int [] freq = makefreqarr(arr);
         System.out.println("enter the number of quaries");
-         int k=sc.nextInt();
+         int q=sc.nextInt();
          while (q>0) {
             System.out.println("enter number to be searched");
-            int x = sc.nextInt();
-            if(freq[x]> 0){
+            int xs = sc.nextInt();
+            if(freq[xs]> 0){
                 System.out.println("yes");
             }
             else{
