@@ -124,6 +124,33 @@ public class Arrayday3_1 {
         return ans;
 
     }
+
+     static void checkinarray(int arr[]){
+        /* 
+         * Check if the elements in the array is present on the array or not?
+         *   Note: value of all the elements in the array is less then 10 to the power 5
+         * 
+         * say example:
+         *       arr = 5 6 5 400 560 1000 400
+         * q is the number of queary--5 number of ask 
+         *   5-> 5 , yes other no for 5 times
+         * 
+         * CONCEPT OF freauency array : which have value 10^5+1
+         *  freq --> 0 0 0 0 0 0 0 00 0 
+         *  index --> 0 1  2  3 4 5
+         * 
+         * what to do is that for the main arr when we find the element / number 
+         *  inrement the value of feq like 1 if it repetead once or 2 for 2time repetation.
+         */
+
+     }
+     static int[] makefreqarr(int arr[] ){
+        int[] freq = new int [100005];
+        for(int i=0;i<arr.length;i++){
+            freq[arr[i++]];
+        }
+        return freq;
+     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("enter the length of the array");
@@ -132,10 +159,22 @@ public class Arrayday3_1 {
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
         }
-        System.out.println("enter the k");
+        int [] freq = makefreqarr(arr);
+        System.out.println("enter the number of quaries");
          int k=sc.nextInt();
+         while (q>0) {
+            System.out.println("enter number to be searched");
+            int x = sc.nextInt();
+            if(freq[x]> 0){
+                System.out.println("yes");
+            }
+            else{
+                System.out.println("no");
+            }
+            q--;
+            
+         }
     
-        int ans [] = roatatebyk(arr, k);
-        printarr(ans);
+       
     }
 }
