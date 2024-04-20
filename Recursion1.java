@@ -22,7 +22,7 @@ public class Recursion1 {
      * 2.Self work --> do your work (1234)5
      * 3.Base case (identify) -> the smallest problem for which the answer is ovious
      * @NOTE:
-     * 
+     * Recusive work or recusrive work at first (identity first)
      */
 
      static void rec1 (int n){
